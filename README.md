@@ -1,4 +1,4 @@
-# jQuery Collapse plugin
+# jQuery Collapse plugin  
 
 It's one more of jQuery Collapse plugin variations. Inspired by Daniel
 Stock's [jQuery-Collapse](https://github.com/danielstocks/jQuery-Collapse)
