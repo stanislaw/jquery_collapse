@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQueryCollapse tests - Cookie support</title>
+    <link rel="stylesheet" href="../src/qunit.css">
+    <script src="../src/jquery.min.js"></script>
+    <script src="../src/qunit.js"></script>
+    <script src="../src/jquery.cookie.js"></script>
+    <script src="../src/new.jquery.collapse.js"></script>
+    <script src="cookie_support.js"></script>
+</head>
+
+<style>
+  .test ul { display: none }
+  .accordion_test ul { display: none }
+</style>
+<body>
+    <div id="main" style="//position:absolute; left:-100000px">
+        <div class="test">
+            <h3 class="">Fruits</h3>
+            <ul class="ul1">
+                <li class="li1">Apple</li>
+                <li class="li2">Pear</li>
+                <li class="li3">Orange</li>
+            </ul>
+            <h3>Vegetables</h3>
+            <ul class="ul2">
+                <li>Carrot</li>
+                <li>Tomato</li>
+                <li>Squash</li>
+            </ul>
+            <h3>Cereals</h3>
+            <ul class="ul3">
+                <li>Wheat</li>
+                <li>Rye</li>
+                <li>Corn</li>
+            </ul>
+        </div>
+            
+        <div class="accordion_test">
+            <h3>Fruits</h3>
+            <ul>
+                <li class="li1">Apple</li>
+                <li class="li2">Pear</li>
+                <li class="li3">Orange</li>
+            </ul>
+            <h3>Vegetables</h3>
+            <ul>
+                <li>Carrot</li>
+                <li>Tomato</li>
+                <li>Squash</li>
+            </ul>
+            <h3>Cereals</h3>
+            <ul>
+                <li>Wheat</li>
+                <li>Rye</li>
+                <li>Corn</li>
+            </ul>
+        </div>
+
+    </div>
+ 
+    <!-- // -->
+
+    <h1 id="qunit-header">jQuery.Collapse</h1>
+    <h2 id="qunit-banner"></h2>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+    
+</body>
+</html>
