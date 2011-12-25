@@ -5,11 +5,11 @@ Stock's [jQuery-Collapse](https://github.com/danielstocks/jQuery-Collapse)
 
 It acts as collapse (default) or accordion ({accordion: true} option).
 
-Dec, 26th. WARNING: It is raw and untested enough yet.
+Dec, 26th. WARNING: It is raw and was not tested enough yet.
 
 ## Usage
 
-You have container with following structure (h3s for collapse headings, blocks elements immediatedly following for collapsible content):
+You have container with following structure (h3s for collapse headers, block elements immediatedly following them for collapsible content):
 
 ```html
 <div id="some_container">
