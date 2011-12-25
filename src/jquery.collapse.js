@@ -76,13 +76,13 @@ console.log('fresh loading...');
                 inactive = "inactive";
 
             this.collapse_all = function() {
-                this.find(options.block_tag).each(function(index, el){
+                this.children(options.block_tag).each(function(index, el){
                     $(el).trigger('hide');
                 })
             } 
 
             this.expand_all = function() {
-                this.find(options.block_tag).each(function(index, el){
+                this.children(options.block_tag).each(function(index, el){
                     $(el).trigger('show');
                 })
             } 
@@ -90,8 +90,8 @@ console.log('fresh loading...');
             return this.each(function(container_index, elem) {
                 cookie_blocks.set(collapse_context, container_index);
                 var container = $(elem);
-                var headers = container.find(options.header_tag);
-                var blocks = container.find(options.block_tag);
+                var headers = container.children(options.header_tag);
+                var blocks = container.children(options.block_tag);
 
                 blocks.each(function() {
                     var block = $(this);
