@@ -124,7 +124,7 @@
                     } 
 
                     header.bind('click', function(e) {
-                        var header = $(e.target); 
+                        var header = $(this); 
 
                         if (header.hasClass(active)) {
                             if (accordion) return;
