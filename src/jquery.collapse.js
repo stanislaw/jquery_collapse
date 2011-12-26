@@ -7,7 +7,6 @@
  * Released under the MIT, BSD, and GPL Licenses.
  */
 
-console.log('fresh loading...');
 (function($) {
     var collapse_context_global = 0; 
     // var cookie_blocks = JSON.parse($.cookie('collapse')) || {};
@@ -139,7 +138,7 @@ console.log('fresh loading...');
                             header.next().trigger('show');
                             cookie_blocks.set(collapse_context, container_index, index);
                         }
-                        $.cookie('collapse', JSON.stringify(cookie_blocks.get()));
+                        $.cookie('collapse', JSON.stringify(cookie_blocks.get()), { path: '/'});
                     })
                 })
                 
