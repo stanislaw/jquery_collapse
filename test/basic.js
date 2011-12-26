@@ -13,9 +13,10 @@ $(document).ready(function() {
     var first_list = $(lists[0]);
     
     module("Collapse - basic features");
-    test("initial layout", function() {
-        equals(headings.filter(".inactive").length, 3, "Three inactive headings");
-        equals(el.find("ul:hidden").length, 3, "Three hidden lists");
+    test("initial layout - first section is opened", function() {
+        equals(headings.filter(".inactive").length, 2, "Two inactive headings");
+        equals(el.find("ul:hidden").length, 2, "Two hidden lists");
+        ok(headings.first().is('.active'), "first heading's class is 'active'");
     });
 
     test("expand_all, collapse_all", function() {
