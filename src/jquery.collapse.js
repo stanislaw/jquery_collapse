@@ -141,7 +141,11 @@
                         $.cookie('collapse', JSON.stringify(cookie_blocks.get()), { path: '/'});
                     })
                 })
-                
+               
+                // No active sections? Open the first.
+                if (!(headers).is('.active')) {
+                    $(headers).first().trigger('click');
+                }
             });
         }
     });
