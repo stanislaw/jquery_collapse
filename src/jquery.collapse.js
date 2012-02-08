@@ -125,7 +125,7 @@
 
                     header.bind('click', function(e) {
                         var header = $(this); 
-
+ 
                         if (header.hasClass(active)) {
                             if (accordion) return;
                             header.next().trigger('hide'); 
@@ -138,12 +138,12 @@
                             header.next().trigger('show');
                             cookie_blocks.set(collapse_context, container_index, index);
                         }
-                        $.cookie('collapse', JSON.stringify(cookie_blocks.get()), { path: '/'});
+                        $.cookie('collapse', JSON.stringify(cookie_blocks.get()), { path: '/' });
+                        e.preventDefault();
                     })
                 })
-               
-                // No active sections? Open the first.
-                if (!(headers).is('.active')) {
+
+                if ($(headers).length > 1 && !$(headers).is('.active')) {
                     $(headers).first().trigger('click');
                 }
             });
